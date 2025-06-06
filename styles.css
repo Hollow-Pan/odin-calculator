@@ -1,0 +1,58 @@
+body {
+    box-sizing: border-box;
+    background-color: beige;
+    color: white;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calc-body {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 4%;
+    width: 26rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    background-color: salmon;
+    width:86%;
+    height: 6rem;
+    margin-top: 2rem;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:73%;
+    margin: 1rem 0;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.buttons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 88%;
+    gap: 1rem;
+}
+
+.btn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size:1.5rem;
+}
