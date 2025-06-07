@@ -58,6 +58,8 @@ function handleNumber(value) {
             justEvaluated = false;
         }
     if (value === '.' && inputText.textContent.includes('.')) return;
+    // console.log(inputText.textContent.trim().length);
+    if (inputText.textContent.trim().length >= 11) return;
     inputText.textContent += value;
 }
 
