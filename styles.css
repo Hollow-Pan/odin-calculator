@@ -2,13 +2,29 @@ body {
     box-sizing: border-box;
     background-color: beige;
     color: white;
+    margin: 0;
+}
+
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 34px;
+    font-weight: 600;
 }
 
 .container {
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 88vh;
 }
 
 .calc-body {
@@ -27,6 +43,20 @@ body {
     width:86%;
     height: 6rem;
     margin-top: 2rem;
+    border: 1px solid salmon;
+    border-radius: 5%;
+    display:flex;
+    justify-content: center;
+}
+
+.input-text {
+    background-color: salmon;
+    color: black;
+    width: 84%;
+    height: 3.5rem;
+    margin-top: 2rem;
+    text-align: right;
+    font-size: 42px;
 }
 
 .top-row {
@@ -40,6 +70,12 @@ body {
 .logo {
     font-weight: bold;
     font-size: 24px;
+    color:gold
+}
+
+.top-row-buttons {
+    display: flex;
+    gap: 1rem;
 }
 
 .buttons-grid {
@@ -55,4 +91,12 @@ body {
     height: 4rem;
     border-radius: 50%;
     font-size:1.5rem;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(1.1);
 }
